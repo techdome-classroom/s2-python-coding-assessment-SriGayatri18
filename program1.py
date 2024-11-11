@@ -4,6 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        # Define a mapping of closing to opening brackets
         bracket_map = {')': '(', ']': '[', '}': '{'}
         stack = []
         
@@ -23,6 +24,15 @@ class Solution(object):
         # Check if the stack is empty (all brackets matched)
         return not stack
 
+# Create an instance of Solution
+solution = Solution()
+
+# Test cases
+print(solution.isValid("()"))       # Expected output: True
+print(solution.isValid("()[]{}"))   # Expected output: True
+print(solution.isValid("(]"))       # Expected output: False
+print(solution.isValid("([)]"))     # Expected output: False
+print(solution.isValid("{[]}"))     # Expected output: True
 
 
 
