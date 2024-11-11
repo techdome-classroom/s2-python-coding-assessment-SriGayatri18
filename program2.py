@@ -24,4 +24,12 @@ class Solution:
         
         return total
 
+# Create an instance of Solution
+solution = Solution()
+
+# Test cases and print the output
+print("Input: III -> Output:", solution.romanToInt("III"))      # Expected Output: 3
+print("Input: LVIII -> Output:", solution.romanToInt("LVIII"))  # Expected Output: 58
+print("Input: MCMXCIV -> Output:", solution.romanToInt("MCMXCIV"))  # Expected Output: 1994
+
 
