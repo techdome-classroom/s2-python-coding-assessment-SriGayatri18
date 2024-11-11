@@ -22,7 +22,6 @@ class Solution(object):
         
         # Check if the stack is empty (all brackets matched)
         return not stack
-        pass
 
 
 
